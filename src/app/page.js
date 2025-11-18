@@ -1,7 +1,7 @@
 // app/page.jsx
 import connectDB from "@/app/lib/mongodb";
 import Participant from "@/app/models/Participante.js";
-import ParticipantesClient from "./ParticipantesClient.jsx";
+import ParticipantesClient from "@/app/ParticipantesClient";
 
 export default async function Page() {
   await connectDB();
