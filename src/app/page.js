@@ -3,6 +3,8 @@ import connectDB from "@/app/lib/mongodb";
 import Participant from "@/app/models/Participante.js";
 import ParticipantesClient from "@/app/ParticipantesClient";
 
+export const revalidate = 0;
+
 export default async function Page() {
   await connectDB();
   const participantes = await Participant.find().lean();
